@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+
+# Virtual environments
+venv/
+.venv/
+air-quality-venv/
+
+# Environment variables
+.env
+.env.*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+
+# Node.js (if using frontend/dashboard with npm)
+node_modules/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# Docker
+*.pid
+*.log
+docker-compose.override.yml

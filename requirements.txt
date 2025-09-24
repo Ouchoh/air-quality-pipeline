@@ -1,0 +1,7 @@
+requests             # For calling the Open-Meteo API
+pymongo              # For MongoDB access
+kafka-python         # For Kafka producer/consumer
+cassandra-driver     # For writing to Cassandra
+python-dotenv        # For environment variables
+pandas               # Optional: for data manipulation
+schedule             # Optional: for scheduling hourly jobs
