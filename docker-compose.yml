@@ -1,0 +1,21 @@
+# docker/docker-compose.yml
+version: "3.8"
+
+services:
+  # ----------------------------
+  # MongoDB (raw + curated store)
+  # ----------------------------
+  mongodb:
+    image: mongo:6.0
+    container_name: mongo_air_quality
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
