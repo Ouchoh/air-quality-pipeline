@@ -3,7 +3,7 @@ import logging
 from typing import List, Dict
 from pymongo import MongoClient, ASCENDING, errors
 from datetime import datetime
-from config import MONGO_USER, MONGO_PASS, MONGO_HOST, MONGO_PORT
+from ingestion.config import MONGO_USER, MONGO_PASS, MONGO_HOST, MONGO_PORT
 
 # -----------------------------------------------------------------------------
 # 🔧 Logging
